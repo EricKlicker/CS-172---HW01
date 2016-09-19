@@ -10,6 +10,7 @@
 #include <iomanip>
 #include <ctime>
 #include <cmath>
+#include <string>
 using namespace std;
 void ex02()
 {
@@ -50,26 +51,43 @@ else
     
 if (outsideTEMP > 90)
     boxofchocolates -= 4;
-    cout << "The shelf life of the box of chocolates is now " << boxofchocolates << endl;
+    cout << "The shelf life of the box of chocolates is now: " << boxofchocolates << endl;
  
 }
 
 void ex03()
 {
-    int area;
-    int length = sqrt(area);
-    double diagonal;
+    double area;
     cout << "Please input the area of a square: ";
     cin >> area;
+    double length = sqrt(area);
+    double diagonal;
     diagonal = sqrt(2)*length;
     cout << "The length of the diagonal is: " << diagonal << endl;
+    
+    char response;
+    cout << "please enter a yes(y) or no(n): ";
+    cin >> response;
+    if ( response == 'y')
+        cout << "You chose YES" << endl;
+    else
+        cout << "You chose NO" << endl;
+    
+    char tab = '\t';
+    
+    string mailingaddress;
+    cout << "Please etner your mailing address: ";
+    cin >> mailingaddress;
+    cout << "Your mailing address is: " << mailingaddress << endl;
+    
+    
 }
 
 
 int main()
 
 {
-    ex02();
+    //ex02();
     ex03();
     
     
