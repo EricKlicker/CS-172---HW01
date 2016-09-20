@@ -10,13 +10,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HW 1 CS 172/main.cpp"
-            timestampString = "495846108.312312"
+            timestampString = "496031496.027204"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "ex02()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HW 1 CS 172/main.cpp"
+            timestampString = "496030540.881174"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

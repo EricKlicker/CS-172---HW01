@@ -12,6 +12,28 @@
 #include <cmath>
 #include <string>
 using namespace std;
+void ex02();
+void ex03();
+void ex04();
+void doubleValue(int);
+int add(int, int);
+int addOne(int & );
+
+int addOne(int & g)
+{
+    int h;
+    h = g+1;
+    return h;
+}
+
+int add(int m, int n)
+{
+    int x;
+    x = m + n;
+    return x;
+}
+
+
 void ex02()
 {
     bool hasPassedTest = true;
@@ -79,16 +101,67 @@ void ex03()
     cout << "Please etner your mailing address: ";
     cin >> mailingaddress;
     cout << "Your mailing address is: " << mailingaddress << endl;
-    
-    
+    string empty = " ";
+    cout << endl;
 }
 
+void ex04()
+{
+    int choice;
+     cout << "Please enter a number from 1-10: " << endl;
+    while (choice < 1 || choice > 10)
+    cin >> choice;
+    
+    int sum;
+    int number;
+    cout << "Please enter a number: ";
+    cin >> number;
+    for (int i =1; i <= number; i++)
+    {
+        int temp01 = pow ( i , 3 );
+        sum += temp01;
+    }
+    cout << sum << endl;
+    
+    //outputs the number of asterisks
+    int j=1;
+    do {
+        cout << "*";
+        j++;
+    } while (j<=number);
+    cout << endl;
+    
+    //outputs the even integers from 2 to 40
+    int temp02;
+    for (int k = 1; k <= 20; k++)
+    {
+        temp02 = 2 * k;
+        cout << temp02 << " ";
+    }
+    cout << endl;
+    cout << endl;
+    
+    //uses a function to double the number that was inputed
+    
+    
+    //adds two random numbers with a seperate function
+    srand((unsigned int)time(NULL));
+    int m = rand () % (100 - 0);
+    int n = rand () % (100 - 0);
+    int u = add(m, n);
+    cout << u << endl;
+    
+    //function that adds one to its parameter
+    int g = number;
+    int y =addOne(g);
+    cout << "Value plus one is " << y << endl << endl;
+}
 
 int main()
 
 {
     //ex02();
-    ex03();
-    
+    //ex03();
+    ex04();
     
 }
